@@ -80,6 +80,8 @@
         "oomphinc/composer-installers-extender": "^1.1"
     },
     "require-dev": {
+        "drupal/devel": "^2.0",
+        "drupal/stage_file_proxy": "^1.0@alpha"
         "webflo/drupal-core-require-dev": "^8.7.0"
     },
     "conflict": {
@@ -111,13 +113,18 @@
         ]
     },
     "extra": {
+        "enable-patching": true,
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
         },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
@@ -126,8 +133,34 @@
         "drupal-scaffold": {
             "initial": {
                 ".editorconfig": "../.editorconfig",
-                ".gitattributes": "../.gitattributes"
+                ".gitattributes": "../.gitattributes",
+                "sites/default/default.services.yml": "sites/default/services.yml",
+                "sites/default/default.settings.php": "sites/default/settings.php"
+            },
+            "excludes": [
+                ".htaccess",
+                "sites/development.services.yml",
+                "docroot/sites/development.services.yml"
+            ]
+        }
+        "patches": {
+            "drupal/entity_embed": {
+                "Image entities/fields embedded using Entity Embed cannot be linked in CKEditor": "https://www.drupal.org/files/issues/2018-09-17/entity-embed-link-2511404-68.patch"
+            },
+            "drupal/metatag": {
+                "Merge special page metatags with node pages": "https://www.drupal.org/files/issues/2018-09-19/metatag-merge-node-special-pages_2949963-15.patch"
+            },
+            "drupal/smart_trim": {
+                "Remove extra spaces after HTML stripping": "https://www.drupal.org/files/issues/2018-08-28/0001-Fixing-extra-space-characters-after-HTML-stripping.patch",
+                "Additional options checkbox do not appear to save": "https://www.drupal.org/files/issues/2018-05-04/2941492-4.patch"
             }
         }
+    },
+    "conflict": {
+        "drupal/core": "7.*"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
     }
 }
