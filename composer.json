@@ -82,7 +82,6 @@
         "drupal/video_embed_field": "^2.0",
         "drupal/view_unpublished": "^1.0@alpha",
         "drupal/webform": "^5.1",
-        "drush/drush": "8.*",
         "oomphinc/composer-installers-extender": "^1.1"
     },
     "require-dev": {
@@ -151,9 +150,6 @@
         "patches": {
             "drupal/entity_embed": {
                 "Image entities/fields embedded using Entity Embed cannot be linked in CKEditor": "https://www.drupal.org/files/issues/2018-09-17/entity-embed-link-2511404-68.patch"
-            },
-            "drupal/metatag": {
-                "Merge special page metatags with node pages": "https://www.drupal.org/files/issues/2018-09-19/metatag-merge-node-special-pages_2949963-15.patch"
             },
             "drupal/smart_trim": {
                 "Remove extra spaces after HTML stripping": "https://www.drupal.org/files/issues/2018-08-28/0001-Fixing-extra-space-characters-after-HTML-stripping.patch",
