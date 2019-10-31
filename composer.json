@@ -123,7 +123,6 @@
             "drupal/core": "-p2"
         },
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
@@ -140,9 +139,9 @@
             "excludes": [
                 ".htaccess",
                 "sites/development.services.yml",
-                "docroot/sites/development.services.yml"
+                "web/sites/development.services.yml"
             ]
-        }
+        },
         "patches": {
             "drupal/entity_embed": {
                 "Image entities/fields embedded using Entity Embed cannot be linked in CKEditor": "https://www.drupal.org/files/issues/2018-09-17/entity-embed-link-2511404-68.patch"
