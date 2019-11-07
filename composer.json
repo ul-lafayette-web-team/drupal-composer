@@ -31,6 +31,7 @@
         "drupal/crop": "^1.5",
         "drupal/ctools": "^3.2",
         "drupal/date_popup": "^1.0",
+        "drupal/devel": "^2.1",
         "drupal/diff": "^1.0@RC",
         "drupal/dropzonejs": "^2.0@alpha",
         "drupal/editor_advanced_link": "^1.4",
