@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c94eca538d04179645d9771b94743807",
+    "content-hash": "b174944a67edc78bd9246752f6b8be0c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -123,17 +123,17 @@
             "time": "2017-12-20T14:37:45+00:00"
         },
         {
-            "name": "bower-asset/dropzonejs",
-            "version": "v4.3.0",
+            "name": "bower-asset/dropzone",
+            "version": "v5.5.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:teddywest32/dropzone.git",
-                "reference": "d8ef7a82e6ab5447c1f2d9512c8e1bfd4de5ac9e"
+                "url": "https://github.com/enyo/dropzone.git",
+                "reference": "08b9e0a763b54a685404dea523a9c54242fbe1b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/teddywest32/dropzone/zipball/d8ef7a82e6ab5447c1f2d9512c8e1bfd4de5ac9e",
-                "reference": "d8ef7a82e6ab5447c1f2d9512c8e1bfd4de5ac9e"
+                "url": "https://api.github.com/repos/enyo/dropzone/zipball/08b9e0a763b54a685404dea523a9c54242fbe1b9",
+                "reference": "08b9e0a763b54a685404dea523a9c54242fbe1b9"
             },
             "type": "bower-asset"
         },
@@ -9037,6 +9037,21 @@
                 "webdriver"
             ],
             "time": "2019-09-02T09:46:54+00:00"
+        },
+        {
+            "name": "bower-asset/dropzonejs",
+            "version": "v4.3.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:teddywest32/dropzone.git",
+                "reference": "d8ef7a82e6ab5447c1f2d9512c8e1bfd4de5ac9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/teddywest32/dropzone/zipball/d8ef7a82e6ab5447c1f2d9512c8e1bfd4de5ac9e",
+                "reference": "d8ef7a82e6ab5447c1f2d9512c8e1bfd4de5ac9e"
+            },
+            "type": "bower-asset"
         },
         {
             "name": "doctrine/instantiator",
