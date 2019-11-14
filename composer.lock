@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d3ec1214131271ed08ac7ff591554f6",
+    "content-hash": "83aebf7197fbe1200a9af01bde0d71a7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -9504,6 +9504,30 @@
                 "object graph"
             ],
             "time": "2019-08-09T12:45:53+00:00"
+        },
+        {
+            "name": "npm-asset/dropzone",
+            "version": "5.5.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/dropzone/-/dropzone-5.5.1.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "npm-asset/fontawesome",
+            "version": "5.6.3",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/fontawesome/-/fontawesome-5.6.3.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "phar-io/manifest",
