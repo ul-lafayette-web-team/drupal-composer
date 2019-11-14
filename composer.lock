@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83aebf7197fbe1200a9af01bde0d71a7",
+    "content-hash": "c94eca538d04179645d9771b94743807",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -121,6 +121,21 @@
                 "stack"
             ],
             "time": "2017-12-20T14:37:45+00:00"
+        },
+        {
+            "name": "bower-asset/dropzonejs",
+            "version": "v4.3.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:teddywest32/dropzone.git",
+                "reference": "d8ef7a82e6ab5447c1f2d9512c8e1bfd4de5ac9e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/teddywest32/dropzone/zipball/d8ef7a82e6ab5447c1f2d9512c8e1bfd4de5ac9e",
+                "reference": "d8ef7a82e6ab5447c1f2d9512c8e1bfd4de5ac9e"
+            },
+            "type": "bower-asset"
         },
         {
             "name": "brumann/polyfill-unserialize",

@@ -21,6 +21,7 @@
     },
     "require": {
         "php": ">=7.0.8",
+        "bower-asset/dropzonejs": "^4.3",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
