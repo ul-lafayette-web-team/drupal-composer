@@ -5,11 +5,12 @@ deploy: |
   drush {{alias}} cache-rebuild
   drush {{alias}} updb -y
 
-test: |
+test: |      
   echo "Available environment vars: "
   env
   pwd
   ls -la vendor/bin/phpcs
+  composer install
   echo "Running phpcs..."
   vendor/bin/phpcs
   echo "Here you will kick off 'bin/behat' or other tests to confirm your site works."
