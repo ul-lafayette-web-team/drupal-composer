@@ -8,3 +8,7 @@ deploy: |
 test: |
   echo "Running phpcs..."
   vendor/bin/phpcs
+  echo "Here you will kick off 'bin/behat' or other tests to confirm your site works."
+  
+  echo "Available environment vars: "
+  env
