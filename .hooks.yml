@@ -1,0 +1,10 @@
+# This file is needed for us to customize what devshop does.
+#
+
+deploy: |
+  drush {{alias}} cache-rebuild
+  drush {{alias}} updb -y
+
+test: |
+  echo "Running phpcs..."
+  vendor/bin/phpcs
